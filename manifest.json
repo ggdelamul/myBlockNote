@@ -1,0 +1,11 @@
+{
+  "name": "My Block Note Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "This a block note extension using Local Storage",
+  "action": {
+    "default_icon": "image/livre.png",
+    "default_title": " Mon petit block note",
+    "default_popup": "block.html"
+  }
+}
