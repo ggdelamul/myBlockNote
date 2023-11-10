@@ -5,6 +5,16 @@ console.log(newNoteInputContainer);
 newLink.addEventListener("click", () => {
   newNoteInputContainer.style.display = "flex";
 });
+/* creation de la la clé au nom de la nouvelle note */
+const newNoteInput = document.getElementById("#newNote");
+console.log(newNoteInput); /*  BUG ICI*/
+const saveNoteBtn = document.getElementById("#saveNote");
+let newNote = newNoteInput.value; /* BUG ici */
+console.log(newNote);
+saveNoteBtn.addEventListener("click", () => {
+  window.localStorage.setItem(newNote, "");
+});
+/*enregistrement et effacement de la note */
 
 const btnSave = document.querySelector("#save");
 const btnDelete = document.querySelector("#delete");
