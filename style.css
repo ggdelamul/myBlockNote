@@ -1,5 +1,6 @@
 :root {
-  --primaryColor: #39a7ff;
+  --PrimaryColor: hsl(207, 100%, 61%);
+  --DarkenPrimaryColor: hsl(207, 100%, 41%);
 }
 
 * {
@@ -25,9 +26,15 @@ h1 {
   width: 100%;
 }
 input {
-  background-color: var(--primaryColor);
+  background-color: var(--PrimaryColor);
   border: none;
   color: white;
   border-radius: 5px;
   padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input:hover {
+  background-color: var(--DarkenPrimaryColor);
 }
