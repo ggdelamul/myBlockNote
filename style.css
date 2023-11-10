@@ -20,12 +20,8 @@ main {
 h1 {
   color: var(--PrimaryColor);
 }
-.btn-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-input {
+/*     BASE           */
+.btn {
   background-color: var(--PrimaryColor);
   border: none;
   color: white;
@@ -35,6 +31,26 @@ input {
   transition: 0.3s;
 }
 
-input:hover {
+.btn:hover {
   background-color: var(--DarkenPrimaryColor);
+}
+/*     NAV RIGHT PART */
+
+.right-part li {
+  text-decoration: underline;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/*     BTN CONTAINER */
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+/*      NEW NOTE CONTAINER */
+.newNoteInput-container {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
 }

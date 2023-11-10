@@ -1,12 +1,23 @@
 <html lang="fr">
+  <meta charset="UTF-8" />
   <link rel="stylesheet" href="style.css" />
   <body>
     <main>
       <h1>Mon petit block note</h1>
+      <nav>
+        <ul class="left-part"></ul>
+        <ul class="right-part">
+          <li class="newLink">Créer une nouvelle note</li>
+        </ul>
+      </nav>
+      <div class="newNoteInput-container">
+        <input type="text" name="newNote" id="newNote" />
+        <input type="button" value="Ajouter une nouvelle note" class="btn" />
+      </div>
       <textarea name="block" id="block" cols="30" rows="10"></textarea>
       <div class="btn-container">
-        <input type="button" id="save" value="Sauvegarder" />
-        <input type="button" id="delete" value="Effacer" />
+        <input type="button" id="save" value="Sauvegarder" class="btn" />
+        <input type="button" id="delete" class="btn" value="Effacer" />
       </div>
       <script src="app.js"></script>
     </main>
